@@ -1,0 +1,77 @@
+<canvas width="600" height="400"></canvas>
+
+<script> 
+    function desenhaEstrela(x, y){
+        pincel.beginPath();
+        pincel.fillStyle = "white";
+        pincel.moveTo(x, y-5);
+        pincel.lineTo(x-1, y-1);
+        pincel.lineTo(x-5, y-1);
+        pincel.lineTo(x-2, y+1);
+        pincel.lineTo(x-3, y+5);
+        pincel.lineTo(x, y+3);
+        pincel.lineTo(x+3, y+5);
+        pincel.lineTo(x+2, y+1);
+        pincel.lineTo(x+5, y-1);
+        pincel.lineTo(x+1, y-1);
+        pincel.fill();
+    }
+
+    var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+
+    pincel.fillStyle="green";
+    pincel.fillRect(0, 0, 600, 400);
+
+    pincel.fillStyle="yellow";
+    pincel.beginPath();
+    pincel.moveTo(300, 50);
+    pincel.lineTo(50, 200);
+    pincel.lineTo(550, 200);
+    pincel.lineTo(300, 350);
+    pincel.lineTo(50, 200);
+    pincel.lineTo(550, 200);
+    pincel.fill();
+
+    pincel.fillStyle="darkblue";
+    pincel.beginPath();
+
+    pincel.arc(300, 200, 100, 0, 2*3.14);
+    pincel.fill();
+//df
+    desenhaEstrela(350,180)
+//outros estados
+    desenhaEstrela(350,205)
+    desenhaEstrela(335,230)
+    desenhaEstrela(225,207)
+    desenhaEstrela(230,232)
+    desenhaEstrela(220,237)
+    desenhaEstrela(240,235)
+    desenhaEstrela(237,245)
+    desenhaEstrela(250,255)
+    desenhaEstrela(317,237)
+    desenhaEstrela(320,245)
+    desenhaEstrela(327,260)
+    desenhaEstrela(337,237)
+    desenhaEstrela(275,220)
+    desenhaEstrela(392,210)
+    desenhaEstrela(387,220)
+    desenhaEstrela(390,227)
+    desenhaEstrela(387,235)
+    desenhaEstrela(380,245)
+    desenhaEstrela(370,250)
+    desenhaEstrela(350,255)
+    desenhaEstrela(345,265)
+    desenhaEstrela(340,255)
+    desenhaEstrela(375,255)
+    desenhaEstrela(365,260)
+    desenhaEstrela(360,270)
+    desenhaEstrela(352,280)
+
+    pincel.fillStyle = "white"
+    pincel.fillRect(200,187,200,10)
+
+    pincel.fillStyle = "black"
+    pincel.fillText("ordem e progresso",250,195,90)
+    
+</script>
